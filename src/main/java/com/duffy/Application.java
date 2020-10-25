@@ -10,7 +10,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootConsoleApplication implements CommandLineRunner {
+public class Application implements CommandLineRunner {
 
     @Value("${department}")
     String departmentDescription;
@@ -22,11 +22,11 @@ public class SpringBootConsoleApplication implements CommandLineRunner {
     @Autowired
     private EmployeeRepository employeeRepository;
 
-    private static Logger LOG = LoggerFactory.getLogger(SpringBootConsoleApplication.class);
+    private static Logger LOG = LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) {
         LOG.info("APPLICATION STARTED");
-        SpringApplication.run(SpringBootConsoleApplication.class, args);
+        SpringApplication.run(Application.class, args);
         LOG.info("APPLICATION FINISHED");
         System.exit(0);
     }

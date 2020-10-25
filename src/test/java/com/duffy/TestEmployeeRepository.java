@@ -19,7 +19,7 @@ import java.util.List;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @Transactional
-public class TestQuery {
+public class TestEmployeeRepository {
 
     @Autowired
     private TestEntityManager entityManager;
