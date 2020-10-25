@@ -5,6 +5,8 @@ This project is a Spring Boot Application and built using Maven
 
 This project depends on the MySQL connector for the live version and H2 for creating in-memory tables for testing
 
+This project is targeted towards Java 11.
+
 ## Installing
 Running install.sh will create an executable jar called `querydb-1.0-SNAPSHOT.jar` in the `target` directory.
 
